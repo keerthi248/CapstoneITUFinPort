@@ -104,6 +104,7 @@ for idx,tick in enumerate(TickList):
             SummaryData.update({'Error Description':errorDesc, 'Ticker':tick})
     
             print (idx,":", errorDesc)
+            Output.update({idx:errorDesc})
         else:
             '''
             for quote_data in quote_header:
